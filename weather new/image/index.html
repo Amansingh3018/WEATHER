@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="city-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="popular-cities">
+            <h3>Popular Cities</h3>
+            <div class="city-buttons">
+                <button class="city-btn" data-city="Mumbai">Mumbai</button>
+                <button class="city-btn" data-city="Delhi">Delhi</button>
+                <button class="city-btn" data-city="Bangalore">Bangalore</button>
+                <button class="city-btn" data-city="Chennai">Chennai</button>
+                <button class="city-btn" data-city="Kolkata">Kolkata</button>
+            </div>
+        </div>
+
+        <div class="weather-info">
+            <div class="weather-card">
+                <div class="weather-header">
+                    <h2 id="city-name">City Name</h2>
+                    <p id="date">Date</p>
+                </div>
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div class="temperature">
+                        <h1 id="temp">--°C</h1>
+                        <p id="description">Weather Description</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind">Wind: -- km/h</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">Humidity: --%</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <span id="pressure">Pressure: -- hPa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
